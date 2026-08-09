@@ -108,6 +108,27 @@
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .pin { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; background: var(--bg); padding: 0.2rem 0.45rem; border-radius: 0.35rem; font-size: 0.9rem; }
+  .video-link {
+    display: inline-block;
+    background: #ff0000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+  .video-link:hover { background: #cc0000; text-decoration: none; }
+  .wifi-card {
+    background: #f0f4f8;
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1rem 1.1rem;
+    margin-top: 0.5rem;
+  }
+  .wifi-card strong { font-size: 1rem; display: block; margin-bottom: 0.3rem; }
+  .wifi-card .ssid { color: var(--accent); font-weight: 600; }
+  .wifi-card .pw { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; background: var(--bg); padding: 0.2rem 0.45rem; border-radius: 0.35rem; }
   @media (max-width: 540px) {
     .grid-2 { grid-template-columns: 1fr; }
     header h1 { font-size: 1.6rem; }
@@ -128,10 +149,18 @@
     <h2>Quick Essentials</h2>
     <ul>
       <li><strong>Address:</strong> 10105 Roseland Rd, Fairfax Station, VA</li>
-      <li><strong>Keys:</strong>They are in the lockbox by the power mmeter</li>
+      <li><strong>Keys:</strong> They are in the lockbox by the power meter</li>
     </ul>
     <div class="callout">
       <strong>Important:</strong> If you need to take Athena to daycare, drop-off and pick-up is at <strong>Playful Pack</strong> (see below). She is already enrolled there.
+    </div>
+  </section>
+
+  <section>
+    <h2>WiFi</h2>
+    <div class="wifi-card">
+      <strong>Network:</strong> <span class="ssid">nooches</span><br>
+      <strong>Password:</strong> <span class="pw">fujiyama03</span>
     </div>
   </section>
 
@@ -160,9 +189,8 @@
     <ul>
       <li>Press <strong>Away</strong> to arm (all sensors active).</li>
       <li>Press <strong>Home</strong> to arm in home mode (perimeter only).</li>
-      <li>Enter PIN <span class="pin">4009</span> to confirm.</li>
     </ul>
-    <p class="muted">If you download the Ring app, Brian can send you a Guest User invite so you can control it from your phone. Ask him to send it via the Ring app: Alarm Base Station > Settings > Shared Access > Add User.</p>
+    <p class="muted">You also have Shared User access in the Ring app on your phone (check your email for the invite from Brian). This lets you arm/disarm remotely and check cameras if needed.</p>
 
     <h3>Pella Doors (How to Lock)</h3>
     <p>These handles are a little tricky. Here's the trick:</p>
@@ -180,6 +208,20 @@
       <li><strong>Trash pickup:</strong> Tuesday & Friday (put out Monday night & Thursday night).</li>
       <li><strong>Recycling pickup:</strong> Wednesday (put out Tuesday night).</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Kitchen & Coffee</h2>
+    <p>Feel free to make yourself at home in the kitchen. If you would like to make coffee, here is a quick video walkthrough:</p>
+    <p style="margin-top:0.75rem;"><a class="video-link" href="https://youtube.com/shorts/06pmeNnXIP4" target="_blank">Watch Video: How to Make Coffee</a></p>
+    <p class="muted" style="margin-top:0.75rem;">Coffee supplies should be near the machine. Help yourself to anything in the fridge and pantry as well.</p>
+  </section>
+
+  <section>
+    <h2>Office Setup</h2>
+    <p>If you would like to work from the office and use the monitors, here is a quick video on how to connect your laptop to them:</p>
+    <p style="margin-top:0.75rem;"><a class="video-link" href="https://www.youtube.com/shorts/UqAoJOmyQ2M" target="_blank">Watch Video: How to Connect Laptop to Monitors</a></p>
+    <p class="muted" style="margin-top:0.75rem;">The office is upstairs. Cables and adapters should be on the desk or in the drawers nearby. Let Brian know if you need anything else.</p>
   </section>
 
   <section>
@@ -206,6 +248,24 @@
       <span class="badge">Tue-Sun: 8 AM - 5 PM | Closed Monday</span>
     </div>
 
+    <h3>Bunnyman Brewing (Lorton)</h3>
+    <p>Local craft brewery and coffee shop in the historic Workhouse Arts Center. Great vibe and a rotating tap list.</p>
+    <div class="contact-card">
+      <strong>Bunnyman Brewing</strong>
+      <span>9514 Workhouse Way, Lorton, VA 22079</span>
+      <span class="badge">Mon-Tue: Closed | Wed-Thu: 4-9 PM | Fri: 12-10 PM | Sat: 12-10 PM | Sun: 12-8 PM</span>
+    </div>
+
+    <h3>Brickmakers Cafe (Occoquan Regional Park)</h3>
+    <p>Casual waterfront dining with a patio overlooking the Occoquan River. Located right inside the park.</p>
+    <div class="contact-card">
+      <strong>Brickmakers Cafe</strong>
+      <span>9751 Ox Rd, Lorton, VA 22079</span>
+      <span>(Inside Occoquan Regional Park)</span>
+      <span><a href="tel:+17036469486">(703) 646-9486</a></span>
+      <span class="badge">Mon-Tue: 11 AM - 4 PM | Wed-Sun: 11 AM - 5 PM (varies by season)</span>
+    </div>
+
     <h3>Clifton</h3>
     <p>A tiny, historic town just north of here. Worth a stroll down Main Street.</p>
     <ul>
@@ -214,7 +274,14 @@
       <li><strong>Peterson's Ice Cream</strong> - Old-school ice cream parlor</li>
       <li><strong>Trummers on Main</strong> - Upscale dining in a historic space</li>
     </ul>
-    <p class="muted">Also near Fairfax Station: Burke Lake Park has a great 4.5-mile trail, and the Occoquan trailhead is close by if you want a scenic walk.</p>
+
+    <h3>Parks & Trails</h3>
+    <p>If you want to get outside with Athena or just stretch your legs:</p>
+    <ul>
+      <li><strong>Fountainhead Regional Park</strong> - 10875 Hampton Rd, Fairfax Station, VA 22039 | <a href="tel:+17032509124">(703) 250-9124</a>. Nearly 2,000 acres with hiking, mountain biking, and bridle trails along the Occoquan Reservoir.</li>
+      <li><strong>Occoquan Regional Park</strong> - 9751 Ox Rd, Lorton, VA 22079 | <a href="tel:+17036902121">(703) 690-2121</a>. 350 acres with a scenic 5k loop trail along the river, great for walking and running.</li>
+      <li><strong>Burke Lake Park</strong> - 4.5-mile trail around the lake, close by.</li>
+    </ul>
   </section>
 
   <section>
